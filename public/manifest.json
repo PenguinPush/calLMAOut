@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "calLMAOut",
+  "version": "0.1.0",
+  "description": "outed for not actually laughing",
+  "permissions": [
+    "storage",
+    "offscreen"
+  ],
+  "host_permissions": [
+    "https://api.typesafe.ai/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+  }
+}
