@@ -6,7 +6,10 @@
 
 </div>
 
-<img src="images/calLMAOut.gif" alt="" width="300"/>
+<div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+    <img src="images/calLMAOut.gif" alt"demo gif 1" width="300"/>
+    <img src="images/calLMAOut-2.gif" alt="demo gif 2" width="300"/>
+</div>
 
 ## install
 ```bash
