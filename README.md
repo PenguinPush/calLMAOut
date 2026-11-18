@@ -6,7 +6,7 @@
 
 </div>
 
-<img src="images/callmaout.gif" alt="" width="300"/>
+<img src="images/calLMAOut.gif" alt="" width="300"/>
 
 ## install
 ```bash
